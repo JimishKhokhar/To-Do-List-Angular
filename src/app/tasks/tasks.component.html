@@ -1,0 +1,80 @@
+
+<div>
+    <!-- ------------------------- -->
+
+    <div class="center">
+        <button class="openbtn" onclick="openNav()">☰ Completed tasks</button>
+    </div>
+    
+    
+    <div style="text-align: center; margin-top: 20px;">
+       <span style="font-family: 'Courier New', Courier, monospace;"> <h1>Pending Tasks</h1></span>
+    </div>
+
+    <!-- -----LOGIC FOR SIDEBAR -->
+    
+    <div id="mySidebar" class="sidebar">
+
+        <div class="center" style="background-color: #111;"><span style=" text-align: center; background-color: #111; color: white; font-size: 20px; font-family: 'Courier New', Courier, monospace;">Completed Tasks</span></div>
+
+        <a style="display: block;" href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background-color: #111;">×</a>
+
+
+            <div class="singletask" style="background-color: #111; ">
+        
+        
+            <div *ngFor="let t of CompletedTaskList" style="border:0px; padding: 0px;">
+        
+                <div class="oneTask" >
+                    <h1 style="background-color: #0000ff58; font-size: 35px; height: 1em; text-align: center;">{{t.Name}}</h1>
+                    
+                    <div class="Description">
+                        <p>{{t.Desc}}</p>
+                    </div>
+        
+                    <div style="padding: 0px; background-color: aqua;">
+                        <button class="OperationButtons" id="DeleteButton" style="width: 100%;" (click)="DeleteCompleted(t)">Delete</button>
+                    </div>
+        
+                </div>
+        
+                
+            </div>    
+        
+        </div>
+        
+
+    </div>
+
+    <!-- LOGIC FOR MAIN PENDING TASKS -->
+    
+    
+    
+    <div class="ListOfTasks">
+        <div class="singletask">
+    
+    
+        <div *ngFor="let t of TaskList">
+    
+            <div class="oneTask" >
+                <h1 style="background-color: #0000ff58; font-size: 35px; height: 1em; text-align: center;">{{t.Name}}</h1>
+                
+                <div class="Description">
+                    <p>{{t.Desc}}</p>
+                </div>
+    
+                <div style="padding: 0px; background-color: aqua;">
+                    <button class="OperationButtons" id="DoneButton" (click)="AddToComp(t)">Done</button>
+                    <button class="OperationButtons" id="DeleteButton" (click)="DeleteIt(t.Name,t.Desc)">Delete</button>
+                </div>
+    
+            </div>
+    
+            
+        </div>    
+    
+        </div>
+    </div>
+
+    <!-- ------------------------- -->
+</div>

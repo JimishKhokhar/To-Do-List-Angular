@@ -7,6 +7,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
+<script>
+
+  var isOpen=false;
+
+  function openNav() {
+    if(isOpen==false)
+    {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      isOpen=true;
+    }
+    else 
+    {
+        closeNav();
+        isOpen=false;
+    }
+    
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+</script>
+
+
 <body>
   <app-root></app-root>
 </body>

@@ -1,0 +1,187 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    transition: margin-left .5s;
+    transition: 0.5s;
+}
+
+.center
+{
+  display: flex;
+  justify-content: center;
+}
+
+.singletask
+{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.singletask > div {
+    border: 3px solid black;
+    border-radius: 10px;
+    width:200px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    overflow: scroll;
+    background-color: aqua;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    justify-content: center;
+   
+}
+
+.singletask > div h1
+{
+    padding-bottom: 5px;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    overflow:scroll;
+    max-height: 1em;
+}
+.singletask > div h1::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.singletask > div p{
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    overflow:scroll;
+    max-height: 130px;
+}
+.singletask > div p::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.onetask
+{
+    background-color: aqua;
+}
+
+.onetask h1
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Description
+{
+    background-color:aqua;
+    height: 90px;
+    max-height: 90px;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+
+.Description p
+{
+    background-color: aqua;
+}
+
+.Description::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.OperationButtons
+{
+    height: 20px;
+    margin: 0px; 
+    width: 50%;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+.OperationButtons:active
+{
+    color:white;
+}
+
+#DoneButton:hover
+{
+    background-color: rgb(52, 227, 52);
+}
+#DeleteButton:hover
+{
+    background-color: red;
+}
+
+#DoneButton:active
+{
+    background-color: rgb(36, 158, 36);
+}
+
+#DeleteButton:active
+{
+    background-color: rgb(193, 0, 0);
+}
+
+
+/* ---------------------------------------- */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color:blueviolet;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .openbtn:hover{
+    background-color:rgb(52, 227, 52);
+    color: white;
+    border-radius: 14px;
+    transition: 0.5s;
+  }
+  
+  .openbtn:active {
+    background-color:rgb(36, 158, 36);
+  }
+
+  /* ---------------- */
+  #completed
+  {
+    margin: 10px;
+    background-color: #111;
+  }

@@ -1,0 +1,104 @@
+*{
+  margin: 0%;
+}
+
+h1{ 
+  position: fixed;
+  width: 100%;
+  color: blue;
+  background-color: aqua;
+  text-align: center;
+  text-shadow: 20px black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
+
+.center
+{
+  display: flex;
+  justify-content: center;
+}
+
+.InputArea{
+  margin-top: 50px;
+  display:inline-block;
+  padding: 10px;
+}
+
+input{
+  margin: 10px;
+  height: 20px;
+  font-size: 20px;
+  columns: 30;
+  background-color: aliceblue;
+}
+
+
+.Inline
+{
+  display:block;
+}
+
+textarea{
+  margin: 10px;
+  display: block;
+  resize: none;
+  background-color: aliceblue;
+}
+textarea:focus
+{
+  background-color: #7fffd433;
+}
+
+input:focus{
+  background-color: #7fffd433;
+}
+
+button{
+  height: 30px;
+  width: 90px;
+  line-height: 20px; 
+  text-align: center;
+  background-color: blueviolet;
+  border-color: blueviolet;
+  border-radius: 4px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 7px;
+}
+button span{
+  
+    display: flex;
+    text-align: center;
+    line-height: 1em;
+    background-color: blueviolet;
+}
+button:active span
+{
+  background-color: rgb(64, 8, 116);
+  color: white;
+}
+
+#DeleteAll:hover
+{
+  background-color: red;
+}
+#DeleteAll:hover span
+{
+  background-color: red;
+}
+
+
+
+button:active{
+  background-color: rgb(64, 8, 116);
+  color: white;
+}
+
+#main
+{
+  transition: margin-left .5s;
+}
+
+

@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0px;
+    background-color: beige;
+    /* background-color: rgb(128, 255, 212,0.4); */
+}
