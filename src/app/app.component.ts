@@ -16,12 +16,10 @@ export class AppComponent {
     tasks:Task[];
     constructor()
     {
-      this.tasks=[new Task("First","Do First Task"),
-                  new Task("Second","Do Second Task The Larger ONe "),
-                  new Task("Third The Larger One","Do Third Task aaaaaaaaaaaaaaaaaaaaa aaaaaaaa aaaaaa aaaaaaaaaaa aaaaaa aaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaa aaa aa a a a     aaaaaaa aaaa aaaaaa a       aa aa "),
-                  new Task("Fourth","Do Fourth Task")];
+      this.tasks=[new Task("First Task","Do First Task"),
+                  new Task("Second Task","Do Second Task")];
 
-      this.completedTasks=[new Task("Brushing","Desc 1"),
+      this.completedTasks=[new Task("Completed Task","Press Done to transfer pending tasks to Completed one"),
                            new Task("Eating","Eating is Important in Life!")];
     }
     AddTask(name:HTMLInputElement,desc:HTMLTextAreaElement):boolean
